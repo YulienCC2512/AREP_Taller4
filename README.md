@@ -67,7 +67,8 @@ Dentro de git bash posteriro a al actualizacion de paquetes iniciamos con la gen
 ![](images/craecion.png)
 
 Luego de correr la imagen y verificar los archivos observamos el funcionamiento y la instancia corriendo:
-![](images.funcionamiento.png)
+
+![](images/funcionamiento.png)
 
 Abrimos el navegador y verificamos el funcionamiento:
 ![](images/front.png)

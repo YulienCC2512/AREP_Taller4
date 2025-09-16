@@ -1,0 +1,8 @@
+main\java\com\mycompany\annotations\RestController.class
+main\java\com\mycompany\server\App.class
+main\java\com\mycompany\server\HttpServer.class
+main\java\com\mycompany\annotations\Response.class
+main\java\com\mycompany\annotations\Request.class
+main\java\com\mycompany\annotations\GetMapping.class
+main\java\com\mycompany\controllers\HelloController.class
+main\java\com\mycompany\MicroSpringBoot.class

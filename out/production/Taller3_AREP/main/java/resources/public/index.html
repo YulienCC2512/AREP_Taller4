@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Diseño y Estructuración de Aplicaciones Distribuidas en Internet</h1>
+</header>
+
+<main>
+    <!-- Card GET -->
+    <div class="card">
+        <h2>Prueba con GET</h2>
+        <input type="text" id="nameGet" placeholder="Escribe tu nombre o un número">
+        <button onclick="loadGetMsg()">Enviar</button>
+        <div id="getrespmsg" class="response-box"></div>
+    </div>
+
+    <!-- Card POST -->
+    <div class="card">
+        <h2>Prueba con POST</h2>
+        <input type="text" id="namePost" placeholder="Escribe tu nombre o un número">
+        <button onclick="loadPostMsg()">Enviar</button>
+        <div id="postrespmsg" class="response-box"></div>
+    </div>
+</main>
+</body>
+</html>

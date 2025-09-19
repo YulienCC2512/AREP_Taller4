@@ -8,12 +8,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Request {
-    private String method;                // GET, POST, etc.
-    private String path;                  // /api/users
-    private String httpVersion;           // HTTP/1.1
-    private Map<String, String> headers;  // headers del request
-    private Map<String, String> queryParams; // parámetros en la URL
-    private String body;                  // cuerpo del request
+    private String method;
+    private String path;
+    private String httpVersion;
+    private Map<String, String> headers;
+    private Map<String, String> queryParams;
+    private String body;
 
     public Request(String method, String path, String httpVersion,
                    Map<String, String> headers, Map<String, String> queryParams,
@@ -27,23 +27,26 @@ public class Request {
     }
 
     public static Request build(BufferedReader in) throws IOException, URISyntaxException {
-        // Primera línea: "GET /path?x=1 HTTP/1.1"
+
         String requestLine = in.readLine();
         if (requestLine == null || requestLine.isEmpty()) {
             throw new IOException("Empty request");
         }
 
         String[] parts = requestLine.split(" ");
+        if (parts.length < 2) {
+            throw new IOException("Invalid request line: " + requestLine);
+        }
         String method = parts[0];
         String fullPath = parts[1];
         String httpVersion = parts.length > 2 ? parts[2] : "HTTP/1.1";
 
-        // Parsear URI para separar path y queryParams
+
         URI uri = new URI(fullPath);
         String path = uri.getPath();
         Map<String, String> queryParams = parseQueryParams(uri.getQuery());
 
-        // Leer headers
+
         Map<String, String> headers = new HashMap<>();
         String line;
         while ((line = in.readLine()) != null && !line.isEmpty()) {

@@ -1,4 +1,14 @@
 target/
-.idea
-/nbproject/
-/target
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+*.class
+*.log
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+/surefire-reports/
+/failsafe-reports/
+/test-output/
+/jacoco.exec

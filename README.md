@@ -127,7 +127,7 @@ La arquitectura del sistema está organizada en **tres capas principales**:
 - El video se encuentra en el repositorio guardado como **Prueba-Funcionamiento.mp4**
  donde se puede ver el funcionamiento y el despliegue dentro AWS, ingresar al siguiente **video**:
     
-  [Ver video Funcionamiento](./Prueba-Funcionamiento.mp4)
+  [Ver video de Funcionamiento](./Prueba-Funcionamiento.mp4)
 
    
 
